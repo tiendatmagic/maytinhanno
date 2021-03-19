@@ -30,7 +30,7 @@ function run() {
       an += 1;
     }
     document.getElementById("img").value = array.length - an;
-    //
+
     document.getElementById("obj").value = array.reduce(reducer);
   }
   array = [];
