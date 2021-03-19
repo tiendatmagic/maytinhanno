@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Máy tính Anno</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" />
+  <div class="form">
+    <form>
+      <h1>Máy tính Anno của Tiến Đạt 😁😁😁</h1>
+      <br />
+      <div class="form-group">
+        <div>
+          <label for="text">
+            Nhập các số object tổng của mỗi hình, ngăn cách nhau bởi dấu phẩy
+            ","
+          </label>
+        </div>
+        <div>
+          <input type="text" placeholder="vd: 10,11,12" class="form-control input" id="inputs" value="" />
+        </div>
+      </div>
+      <div class="form-group">
+        <div>
+          <label>Tổng số hình</label>
+        </div>
+        <input class="form-control" id="img" class="img" readonly />
+
+      </div>
+      <div class="form-group">
+        <div>
+          <label>Tổng số object</label>
+        </div>
+
+        <input class="form-control" id="obj" class="obj" readonly />
+
+      </div>
+      <br /><button id="result" type="button">Tính</button>
+
+    </form>
+  </div>
+  <script src="./cal.js"></script>
+</body>
+
+</html>
