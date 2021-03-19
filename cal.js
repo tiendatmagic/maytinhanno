@@ -12,25 +12,20 @@ document.getElementById("result").addEventListener("click", () => {
     mang = inputt.value;
     charArr = mang.split(",");
     run();
-
-
   }
   if (document.getElementById("obj").value === "NaN") {
     document.getElementById("img").value = "Nhập tào lao, không hiểu kiểu gì";
     document.getElementById("obj").value = "Nhập tào lao, không hiểu kiểu gì";
   }
 });
+
 function run() {
   for (i = 0; i < charArr.length; i++) {
     array.push(Number(charArr[i]));
-
-
-
     if (array[i] === 0) {
       an += 1;
     }
     document.getElementById("img").value = array.length - an;
-
     document.getElementById("obj").value = array.reduce(reducer);
   }
   array = [];
